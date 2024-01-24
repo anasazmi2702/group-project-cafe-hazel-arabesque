@@ -1,0 +1,108 @@
+<title> Cafe Hazel Arabesque </title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header>
+      <img src="logo cafe.png" alt="Cafe Hazel Arabesque Logo" width="150" height="150">
+        <h1 style="font-family: 'Arial', sans-serif;"> Cafe Hazel Arabesque </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="coffee-menu">
+        <h2>Coffee Menu</h2>
+        <div class="menu-item">
+          <h3>Espresso</h3>
+          <p>Strong black coffee made by forcing hot water through finely-ground coffee beans.</p>
+          <p>RM5.00</p>
+          <button onclick="addToCart('Espresso', 5.00)">Add to Cart</button>
+        </div>
+    
+        <div class="menu-item">
+          <h3>Cappuccino</h3>
+          <p>Espresso mixed with steamed milk foam, often topped with cinnamon or cocoa powder.</p>
+          <p>RM7.50</p>
+          <button onclick="addToCart('Cappuccino', 7.50)">Add to Cart</button>
+        </div>
+    
+        <div class="menu-item">
+          <h3>Americano</h3>
+          <p>Black coffee made by diluting espresso with hot water, giving it a similar strength to, but different flavor from, regular drip coffee.</p>
+          <p>RM6.00</p>
+          <button onclick="addToCart('Americano', 6.00)">Add to Cart</button>
+        </div>
+    
+        <div class="menu-item">
+          <h3>Cafe Latte</h3>
+          <p>Espresso with steamed milk and a small amount of foam.</p>
+          <p>RM8.00</p>
+          <button onclick="addToCart('Cafe Latte', 8.00)">Add to Cart</button>
+        </div>
+    
+        <div class="menu-item">
+          <h3>Mocha</h3>
+          <p>Espresso with steamed milk and chocolate, often topped with whipped cream.</p>
+          <p>RM7.00</p>
+          <button onclick="addToCart('Mocha', 7.00)">Add to Cart</button>
+        </div>
+      </section>
+    
+      <section id="pastry-menu">
+        <h2>Pastry Menu</h2>
+        <div class="menu-item">
+          <h3>Cheesecake</h3>
+          <p>Delicious cheesecake with a variety of toppings.</p>
+          <p>RM13.90</p>
+          <button onclick="addToCart('Cheesecake', 13.90)">Add to Cart</button>
+        </div>
+    
+        <div class="menu-item">
+          <h3>Chocolate Cake</h3>
+          <p>Rich chocolate cake with layers of chocolate ganache.</p>
+          <p>RM13.90</p>
+          <button onclick="addToCart('Chocolate Cake', 13.90)">Add to Cart</button>
+        </div>
+    
+        <div class="menu-item">
+          <h3>Sausage Roll</h3>
+          <p>Flaky pastry filled with savory sausage.</p>
+          <p>RM10.90</p>
+          <button onclick="addToCart('Sausage Roll', 10.90)">Add to Cart</button>
+        </div>
+    
+        <div class="menu-item">
+          <h3>Chocolate Roll</h3>
+          <p>Soft chocolate-filled pastry roll.</p>
+          <p>RM8.50</p>
+          <button onclick="addToCart('Chocolate Roll', 8.50)">Add to Cart</button>
+        </div>
+      </section>
+    
+      <section id="cart-section">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-list"></ul>
+        <p id="total-price">Total: RM0.00</p>
+      </section>
+
+    </section>
+
+    <section id="cart-section">
+      <h2>Shopping Cart</h2>
+      <ul id="cart-list"></ul>
+      <p id="total-price">Total: RM0.00</p>
+      <button onclick="checkout()">Checkout</button>
+      <button onclick="resetCart()">Reset Cart</button>
+    </section>
+    
+      <script src="coffee.js"></script>
+    </body>
+    </html>
